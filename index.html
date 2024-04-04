@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Input Fields Password</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h2>@dev.cflores</h2><br/>
+            <div class="input__wrapper">
+                <input 
+                    id="password" 
+                    type="password" 
+                    name="password" 
+                    placeholder="Introduce tu Password" 
+                    title="Mínimo 6 caracteres al menos 1 caracter del Alfabeto y 1 Número" 
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                    required class="input__field"
+                >
+                <label for="password" class="input__label">
+                    Password
+                </label>
+                <img 
+                    alt="Eye Icon" title="Eye Icon" 
+                    src="./assets/eye.svg" class="input__icon"
+                >
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
